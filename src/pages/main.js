@@ -1,23 +1,27 @@
-import React from 'react';
-import Layout from '/components/layout.js';
-import SearchComponent from '../components/core/SearchComponent';
+import React from "react";
+import Layout from "../components/layout";
+import SearchComponent from "../components/core/SearchComponent.js";
+import JobListComponent from "../components/core/JobListComponent";
 
+const jobsData = [
+  { id: '1', title: 'Software Developer', company: 'Tech Co.', location: 'New York' },
+  { id: '2', title: 'Data Scientist', company: 'Data Inc.', location: 'San Francisco' },
+  // ...more jobs
+];
 
-const HomePage = () => {
-
-  const handleSearch = (query) => {
-    // Here, you can define what happens when a search is performed.
-    console.log(`Searching for ${query}`);
-  };
-
+const MainPage = () => {
   return (
     <Layout>
-      <h1>This is the main page</h1>
-      <p>search the list of jobs here</p>
-      <SearchComponent onSearch={handleSearch} /> 
-           {/* Other components like FeaturedJobs can go here */}
+      <div>
+        <h1>Main page will be this page</h1>
+        <p>Below this will be the component to display jobs</p>
+        <SearchComponent />
+
+        <h1>JobListings</h1>
+        <JobListComponent jobs={jobsData} />
+      </div>
     </Layout>
   );
 };
 
-export default HomePage;
+export default MainPage;
