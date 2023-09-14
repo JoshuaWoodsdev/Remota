@@ -1,5 +1,8 @@
 import React from "react";
 import GlobalStyles from "../styles/GlobalStyles";
+import Navbar from "./navbar";
+import 'tachyons/css/tachyons.min.css';
+
 
 const Layout = ({ children }) => {
     return (
@@ -7,14 +10,10 @@ const Layout = ({ children }) => {
             <GlobalStyles />
             <div>
                 <header>
-                    {/* Your header content here */}
-                    <h1>Remota</h1>
-
-                    <h1>Navbar</h1>
+                    <Navbar />
                 </header>
                 {children}
                 <footer>
-                    {/* Your footer content here */}
                     <p>© 2023 Remota, Inc.</p>
                 </footer>
             </div>
