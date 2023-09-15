@@ -1,20 +1,17 @@
 import React, { useState } from "react";
 import Layout from "../components/layout";
-import SearchComponent from "../components/core/SearchComponent.js";
-import JobListComponent from "../components/core/JobListComponent";
+import SearchComponent from "../../jobs/SearchComponent.js";
+import JobListComponent from "../../jobs/JobListComponent";
+import JobsData from '../../jobs/JobsData.js'; // Correct the import path
 
-const jobsData = [
-  { id: '1', title: 'Software Developer', company: 'Tech Co.', location: 'New York' },
-  { id: '2', title: 'Data Scientist', company: 'Data Inc.', location: 'San Francisco' },
-  //Will move to Sanity
-];
+// Rest of your code...
 
 const JobSearchPage = () => {
-  const [filteredJobs, setFilteredJobs] = useState(jobsData);
+  const [filteredJobs, setFilteredJobs] = useState(JobsData);
   //function to handle the search when clicked
   const handleSearch = (query) => {
     // Implement your search logic here based on the query
-    const filtered = jobsData.filter((job) => {
+    const filtered = JobsData.filter((job) => {
       return (
         job.title.toLowerCase().includes(query.toLowerCase()) ||
         job.company.toLowerCase().includes(query.toLowerCase()) ||
@@ -29,7 +26,7 @@ const JobSearchPage = () => {
       <div>
         <p>Below this will be the component to display jobs</p>
         <SearchComponent onSearch={handleSearch} />
-        <h1>JobListings_</h1>
+
         <JobListComponent jobs={filteredJobs} />
       </div>
     </Layout>

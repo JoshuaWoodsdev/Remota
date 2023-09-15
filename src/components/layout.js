@@ -1,6 +1,7 @@
 import React from "react";
 import GlobalStyles from "../styles/GlobalStyles";
 import Navbar from "./navbar";
+import Footer from "./footer";
 import 'tachyons/css/tachyons.min.css';
 
 
@@ -13,9 +14,7 @@ const Layout = ({ children }) => {
                     <Navbar />
                 </header>
                 {children}
-                <footer>
-                    <p>© 2023 Remota, Inc.</p>
-                </footer>
+                <Footer />
             </div>
         </>
     );
