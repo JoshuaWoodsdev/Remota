@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Layout from "../components/layout";
 import SearchComponent from "../../jobs/SearchComponent.js";
 import JobListComponent from "../../jobs/JobListComponent";
-import JobsData from '../../jobs/JobsData.js'; // Correct the import path
+import JobsData from '../../JobsData.json'; // Update the import path
+// Correct the import path
 
 // Rest of your code...
 
