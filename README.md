@@ -1,49 +1,20 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+# Job Search Platform
 
-## 🚀 Quick start
+A simple, straightforward job search platform built with Gatsby.js, hosted on Vercel, styled with Tachyons.css, powered by Sanity.io for content management, and featuring user authentication via Userbase.
 
-1.  **Create a Gatsby site.**
+## Overview
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+This project aims to provide users with an efficient way to search for job listings across various industries. It offers an easy-to-use interface and a variety of features to streamline the job searching process.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## Key Technologies
 
-2.  **Start developing.**
+- **Gatsby.js**: A fast, modern framework for building websites and web applications. It enables efficient development and optimized performance.
 
-    Navigate into your new site’s directory and start it up.
+- **Vercel**: A powerful cloud platform for hosting websites and applications, providing seamless deployment and scalability.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+- **Tachyons.css**: A functional CSS framework that helps create beautiful, responsive designs with minimal effort.
 
-3.  **Open the code and start customizing!**
+- **Sanity.io**: A headless content management system (CMS) for managing job listings and other content on the platform.
 
-    Your site is now running at http://localhost:8000!
+- **Userbase**: A user authentication and database service that adds secure user accounts to the application.
 
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
