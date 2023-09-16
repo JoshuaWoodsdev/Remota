@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from '/assets/austin-distel-wawEfYdpkag-unsplash.jpg';
+import backgroundImage from '/assets/images/austin-distel-wawEfYdpkag-unsplash.jpg';
 
 const Navbar = () => {
   const navStyle = {
