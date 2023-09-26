@@ -18,7 +18,7 @@ const SigninSignup = () => {
       <a className="f6 br-pill bg-blue no-underline white ba b--blue grow pv2 ph3 dib mr3"
           href="#">
           Search Jobs
-          <button onClick={()=>{navigate("/page")}}>Page button</button>
+          
         </a>
         <a className="f6 br-pill blue no-underline ba grow pv2 ph3 dib"
           href="#">

@@ -6,12 +6,18 @@ module.exports = {
     title: `Remota`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-        name: "images",
-        path: '/images',
-    },
-    __key: "images"
-  }]
+  plugins: [
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      },
+      __key: 'images'
+    }
+  ]
 };

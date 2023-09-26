@@ -1,6 +1,5 @@
 import React from "react";
-import Layout from "../components/layout";
-import SigninSignup from "../components/signinSignup";
+
 
 //setup main component
 const HomePage = () => {
