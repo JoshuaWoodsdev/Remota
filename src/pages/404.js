@@ -1,49 +1,34 @@
-import * as React from "react"
-import { Link } from "gatsby"
-
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+// src/pages/404.js
+import React from "react";
 
 const NotFoundPage = () => {
+  const containerStyle = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    minHeight: "calc(100vh - 100px)",
+    textAlign: "center",
+    backgroundColor: "#f0f0f0",
+  };
+
+  const headingStyle = {
+    fontSize: "36px",
+    color: "#333",
+  };
+
+  const paragraphStyle = {
+    fontSize: "18px",
+    color: "#664",
+  };
+
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <div style={containerStyle}>
 
-export default NotFoundPage
+      <h1 style={headingStyle}>404 - Page Not Found</h1>
+      <p style={paragraphStyle}>The page you are looking for does not exist.</p>
+    </div>
+  );
+};
 
-export const Head = () => <title>Not found</title>
+export default NotFoundPage;

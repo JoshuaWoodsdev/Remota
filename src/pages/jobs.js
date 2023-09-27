@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Layout from "../components/layout";
-
 import JobsData from '../../JobsData.json'; // Update the import path
 import SearchComponent from "../components/jobs/SearchComponent";
 import JobListComponent from "../components/jobs/JobListComponent";
@@ -19,16 +18,13 @@ const JobSearchPage = () => {
     });
     setFilteredJobs(filtered);
   };
-  
-  
+
   return (
     <Layout>
       <div>
         <p>Below this will be the component to display jobs</p>
         <SearchComponent onSearch={handleSearch} />
-
-           <JobListComponent jobs={filteredJobs} />
-
+        <JobListComponent jobs={filteredJobs} />
       </div>
     </Layout>
   );
