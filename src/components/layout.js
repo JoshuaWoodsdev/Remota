@@ -2,6 +2,8 @@ import React from "react";
 import GlobalStyles from "../styles/GlobalStyles";
 
 import 'tachyons/css/tachyons.min.css';
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 
 const Layout = ({ children }) => {
@@ -10,10 +12,10 @@ const Layout = ({ children }) => {
             <GlobalStyles />
             <div>
                 <header>
-                    <Navbar />
+                    <Navbar/>
                 </header>
                 {children}
-                <Footer />
+                <Footer/>
             </div>
         </>
     );
