@@ -2,16 +2,15 @@ import React, { useState } from "react";
 import Layout from "../components/layout";
 
 import JobsData from '../../JobsData.json'; // Update the import path
-// Correct the import path
-
-// Rest of your code...
+import SearchComponent from "../components/jobs/SearchComponent";
+import JobListComponent from "../components/jobs/JobListComponent";
 
 const JobSearchPage = () => {
   const [filteredJobs, setFilteredJobs] = useState(JobsData);
-  //function to handle the search when clicked
+
   const handleSearch = (query) => {
     // Implement your search logic here based on the query
-    const filtered = JobsData.filter((job) => {
+    const filtered = JobsData.jobs.filter((job) => {
       return (
         job.title.toLowerCase().includes(query.toLowerCase()) ||
         job.company.toLowerCase().includes(query.toLowerCase()) ||
@@ -20,14 +19,16 @@ const JobSearchPage = () => {
     });
     setFilteredJobs(filtered);
   };
-
+  
+  
   return (
     <Layout>
       <div>
         <p>Below this will be the component to display jobs</p>
         <SearchComponent onSearch={handleSearch} />
 
-        <JobListComponent jobs={filteredJobs} />
+           <JobListComponent jobs={filteredJobs} />
+
       </div>
     </Layout>
   );

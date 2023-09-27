@@ -1,6 +1,5 @@
 import React from 'react';
 import backgroundImage from '../images/austin-distel-wawEfYdpkag-unsplash.jpg';
-import SearchComponent from './jobs/SearchComponent';
 
 const Navbar = () => {
 
@@ -11,12 +10,12 @@ const Navbar = () => {
     height: '700px', // Default height for small to medium screens
   
   };
+
   return (
     <nav style={navStyle} class="pa3 pa4-ns">
       <div class="tc flex flex-wrap">
         <a class="link dim black b f1 f-headline-ns tc db mb3 mb4-ns white" href="#" title="Home">Remota</a>
       </div>
-      <SearchComponent/>
     </nav>
   );
 };
