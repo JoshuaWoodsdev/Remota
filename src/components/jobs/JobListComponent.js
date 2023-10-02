@@ -1,5 +1,5 @@
 import React from "react";
-import JobCardComponent from "./JobCardComponent.js"
+import JobCardComponent from "./JobCardComponent.js";
 
 const JobListComponent = ({ jobs }) => {
   return (
@@ -14,7 +14,7 @@ const JobListComponent = ({ jobs }) => {
           <p>No jobs to display</p>
         )}
       </div>
-    </div>
+  </div>
   );
 };
 
