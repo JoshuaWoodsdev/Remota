@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const SigninSignup = () => {
   return (
@@ -14,15 +15,15 @@ const SigninSignup = () => {
         Sign up for beta access or learn more about x.
       </p>
       <div>
-      <a className="f6 br-pill bg-blue no-underline white ba b--blue grow pv2 ph3 dib mr3"
-          href="#">
+        <Link to="/jobs" className="f6 br-pill bg-blue no-underline white ba b--blue grow pv2 ph3 dib mr3">
           Search Jobs
-          
-        </a>
-        <a className="f6 br-pill blue no-underline ba grow pv2 ph3 dib"
-          href="#">
+        </Link>
+
+        <Link to="/jobs" className="f6 br-pill blue no-underline ba grow pv2 ph3 dib">
           Post Job
-        </a>
+        </Link>
+
+
       </div>
     </article>
   );
